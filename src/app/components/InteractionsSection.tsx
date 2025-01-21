@@ -2,27 +2,30 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import meet1 from '../../../Public/meet1.jpg'
+import meet2 from '../../../public/meet2.jpg'
+import meet3 from '../../../public/mee3.jpg'
 
 const interactions = [
   {
     id: 1,
     leader: "King Salman bin Abdul Aziz Al Saud",
     description: "Dr. Umair Mahmood Siddiqui being welcomed by the Custodian of the Two Holy Mosques, King Salman bin Abdul Aziz Al Saud of Saudi Arabia",
-    image: "/meet1.jpg",
+    image: meet1.src,
     country: "Saudi Arabia"
   },
   {
     id: 2,
     leader: "Dato Seri Anwar Ibrahim",
     description: "Dr. Umair Mahmood Siddiqui in discussion with Dato Seri Anwar Ibrahim the Prime Minister of Malaysia at Seri Perdana the official Residence of the Prime Minister of Malaysia, Putrajaya, in 2024.",
-    image: "/meet2.jpg",
+    image: meet2.src,
     country: "Malaysia"
   },
   {
     id: 3,
     leader: "Mufti Sher Muhammad Khan",
     description: "Dr. Umair Mahmood Siddiqui in conversation with Shaikh Tamim Bin Hamad Al Thani, Ameer of Qatar",
-    image: "/mee3.jpg",
+    image: meet3.src,
     country: "Qatar"
   }
 ]

@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 import Image from 'next/image'
-
+import dr from '../public/dr.jpg'
 export default function AboutPage() {
   return (
     <Layout>
@@ -10,7 +10,7 @@ export default function AboutPage() {
           
           <div className="mb-12 relative aspect-video overflow-hidden rounded-lg">
             <Image
-              src="/dr.jpg?height=720&width=1280"
+              src={dr}
               alt="Scholar giving a lecture"
               fill
               className="object-cover"

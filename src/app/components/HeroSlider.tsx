@@ -3,51 +3,62 @@
 import { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
+import p1 from '../../../Public/p1.jpg'
+import p2 from '../../../Public/p2.jpg'
+import p3 from '../../../Public/p3.jpg'
+import p10 from '../../../Public/p10.jpg'
+import p8 from '../../../Public/p8.jpg'
+import p5 from '../../../Public/p5.jpg'
+import event1 from '../../../Public/event1.jpg'
+import event7 from '../../../Public/event7.jpg'
+import event8 from '../../../Public/event8.jpg'
+import event4 from '../../../Public/event4.jpg'
+
 
 const slides = [
   {
     id: 1,
-    image: "/p1.jpg?height=1080&width=1920",
+    image: p1.src,
     // title: "Journey of Knowledge",
     // description: "Discover the depths of Islamic wisdom"
   },
   {
     id: 2,
-    image: "/p10.jpg?height=1080&width=1920",
+    image: p10.src,
     // title: "Spiritual Growth",
     // description: "Embark on a path of enlightenment"
   },
   {
     id: 3,
-    image: "/p8.jpg?height=1080&width=1920",
+    image: p8.src,
     // title: "Islamic Heritage",
     // description: "Preserving and sharing our rich traditions"
   },
   {
     id: 4,
-    image: "/p3.jpg?height=1080&width=1920",
+    image: p3.src,
     // title: "Islamic Heritage",
     // description: "Preserving and sharing our rich traditions"
   },
   {
     id: 5,
-    image: "/p2.jpg?height=1080&width=1920",
+    image: p2.src,
     // title: "Islamic Heritage",
     // description: "Preserving and sharing our rich traditions"
   },
   {
     id: 6,
-    image: "/p5.jpg?height=1080&width=1920",
+    image: p5.src,
     // title: "Islamic Heritage",
     // description: "Preserving and sharing our rich traditions"
   }
 ]
 
 const eventImages = [
-  { id: 1, src: "/event1.jpg?height=300&width=400", alt: "" },
-  { id: 2, src: "/event7.jpg?height=300&width=400", alt: "" },
-  { id: 3, src: "/event8.jpg?height=300&width=400", alt: "" },
-  { id: 4, src: "/event2.jpg?height=300&width=400", alt: "" },
+  { id: 1, src: event1.src, alt: "" },
+  { id: 2, src: event7.src, alt: "" },
+  { id: 3, src: event8.src, alt: "" },
+  { id: 4, src: event4.src, alt: "" },
 ]
 
 export default function HeroSlider() {

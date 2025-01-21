@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import banner from '../../../public/book-banner.jpg'
 
 export default function BooksSection() {
   return (
@@ -10,7 +11,7 @@ export default function BooksSection() {
         <h2 className="text-4xl font-bold text-center text-white mb-12">Publications</h2>
         <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] mb-12">
           <Image 
-            src="/book-banner.jpg" 
+            src={banner}
             alt="Featured Books Banner" 
             fill 
             className="bg-cover rounded-lg shadow-lg"

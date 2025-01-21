@@ -3,6 +3,20 @@
 import { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import Image from 'next/image'
+import book1 from '../../../public/book1.jpeg'
+import book2 from '../../../public/book2.jpeg'
+import book3 from '../../../public/book3.jpeg'
+import book4 from '../../../public/book4.jpeg'
+import book5 from '../../../public/book5.jpeg'
+import book6 from '../../../public/book6.jpeg'
+import book7 from '../../../public/book7.jpeg'
+import book8 from '../../../public/book8.jpeg'
+import book9 from '../../../public/book9.jpeg'
+import book10 from '../../../public/book10.jpeg'
+import book11 from '../../../public/book11.jpeg'
+import book12 from '../../../public/book12.jpeg'
+import book13 from '../../../public/book13.jpeg'
+import book14 from '../../../public/book14.jpeg'
 
 const books = [
   {
@@ -10,7 +24,7 @@ const books = [
     title: "40 Ahadith for Kids",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A simplified collection of 40 Ahadith for children.",
-    image: "/book1.jpeg",
+    image: book1.src,
     category: "Islamic Studies"
   },
   {
@@ -18,7 +32,7 @@ const books = [
     title: "The Beacon Light",
     author: "Compiled by Dr. Umair Mahmood Siddiqui",
     description: "A collection of writings of Dr. Umair Mahmood Siddiqui.",
-    image: "/book2.jpeg",
+    image: book2.src,
     category: "Islamic Studies"
   },
   {
@@ -26,7 +40,7 @@ const books = [
     title: "Tazkira",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An insightful account of spiritual and moral values.",
-    image: "/book3.jpeg",
+    image: book3.src,
     category: "Islamic Studies"
   },
   {
@@ -34,7 +48,7 @@ const books = [
     title: "Sheikh Ibn Arabi",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An analysis of the life and teachings of Sheikh Ibn Arabi.",
-    image: "/book4.jpeg",
+    image: book4.src,
     category: "Biography"
   },
   {
@@ -42,7 +56,7 @@ const books = [
     title: "Pakistan Ka Matlab Kya?",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A discourse on the meaning and significance of Pakistan.",
-    image: "/book5.jpeg",
+    image: book5.src,
     category: "History"
   },
   {
@@ -50,7 +64,7 @@ const books = [
     title: "Ghazwa-e-Hind",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A discussion on the concept and implications of Ghazwa-e-Hind.",
-    image: "/book6.jpeg",
+    image: book6.src,
     category: "History"
   },
   {
@@ -58,7 +72,7 @@ const books = [
     title: "Muhammad: The Glory of the Ages",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A tribute to the Prophet Muhammad's (PBUH) life and legacy.",
-    image: "/book7.jpeg",
+    image: book7.src,
     category: "Biography"
   },
   {
@@ -66,7 +80,7 @@ const books = [
     title: "Chalees Ahadith",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A curated selection of 40 Ahadith with commentary.",
-    image: "/book8.jpeg",
+    image: book8.src,
     category: "Islamic Studies"
   },
   {
@@ -74,7 +88,7 @@ const books = [
     title: "Communist Challenge to Islam",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An exposition on the conflict between communism and Islam.",
-    image: "/book9.jpeg",
+    image: book9.src,
     category: "Political Islam"
   },
   {
@@ -82,7 +96,7 @@ const books = [
     title: "Dr. Umair Mahmood Siddiqui: The Ghazali of his Age",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A biography highlighting Dr. Umair Mahmood Siddiqui's scholarly contributions.",
-    image: "/book10.jpeg",
+    image: book10.src,
     category: "Biography"
   },
   {
@@ -90,7 +104,7 @@ const books = [
     title: "Islamic Jurisprudence",
     author: "Scholar Name",
     description: "A comprehensive guide to Islamic law and its principles.",
-    image: "/book11.jpeg",
+    image: book11.src,
     category: "Fiqh"
   },
   {
@@ -98,7 +112,7 @@ const books = [
     title: "Introduction to Islamic Economics",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "An exploration of Islamic economic principles and practices.",
-    image: "/book12.jpeg",
+    image: book12.src,
     category: "Economics"
   },
   {
@@ -106,7 +120,7 @@ const books = [
     title: "Islamic Theology and Philosophy",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A study on the theological and philosophical traditions of Islam.",
-    image: "/book13.jpeg",
+    image: book13.src,
     category: "Philosophy"
   },
   {
@@ -114,7 +128,7 @@ const books = [
     title: "Revival of Muslim Thought",
     author: "Dr. Umair Mahmood Siddiqui",
     description: "A discussion on the revival of Islamic thought in the modern age.",
-    image: "/book14.jpeg",
+    image: book14.src,
     category: "Islamic Studies"
   }
 ]

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import banner from '../../../Public/new-banner1.jpg'
 
 export default function BiographySection() {
     return (
@@ -8,7 +9,7 @@ export default function BiographySection() {
                 <div className="max-w-6xl mx-auto">
                     <div className="relative w-full h-[300px] md:h-[500px] lg:h-[500px] mb-12 rounded-lg overflow-hidden">
                         <Image
-                            src="/new-banner.jpg"
+                            src={banner}
                             alt="Dr. Ahmad Al-Rashid Banner"
                             fill
                             className="bj-cover"

@@ -3,29 +3,30 @@
 import { useState } from 'react'
 import { Play } from 'lucide-react'
 import Link from 'next/link'
+import event1 from '../../../Public/event1.jpg'
+import event2 from '../../../Public/event2.jpg'
+import event3 from '../../../Public/event3.jpg'
 
 const videos = [
   {
     id: 1,
-
-    thumbnail: "/event1.jpg?height=720&width=1280",
-
-    youtubeId: "-b12v8nyhdI"
+    thumbnail: event1.src, 
+    youtubeId: "-b12v8nyhdI",
+    category: "Lectures"
   },
   {
     id: 2,
-    
-    thumbnail: "/event2.jpg?height=720&width=1280",
-
-    youtubeId: "OGd4VjoPiqU"
+    thumbnail: event2.src,
+    youtubeId: "OGd4VjoPiqU",
+    category: "Sermons"
   },
   {
     id: 3,
-    
-    thumbnail: "/event3.jpg?height=720&width=1280",
-
-    youtubeId: "zmjZbZhMH8k"
-  }
+    thumbnail: event3.src,
+    youtubeId: "zmjZbZhMH8k",
+    category: "Events"
+  },
+  
 ]
 
 export default function VideoSection() {

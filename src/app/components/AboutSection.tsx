@@ -1,5 +1,6 @@
 import { GraduationCap, Book, Users, Globe } from 'lucide-react'
 import Image from 'next/image'
+import event1 from '../../../Public/event1.jpg'
 
 export default function AboutSection() {
   const features = [
@@ -33,7 +34,7 @@ export default function AboutSection() {
             <div className="absolute inset-0 bg-amber-400 rounded-3xl transform rotate-6"></div>
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden">
               <Image
-                src="/event1.jpg?height=800&width=1200"
+                src={event1}
                 alt="Islamic Scholar teaching"
                 fill
                 className="bg-cover"

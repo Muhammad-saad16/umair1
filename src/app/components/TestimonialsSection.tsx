@@ -2,13 +2,16 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import ahmed from '../../../Public/Ahmad-Javed.png'
+import majeed from '../../../Public/Dr.-Majeedullah-Qadri.png'
+import qibla from '../../../Public/qibla-Ayaz.png'
 
 const testimonials = [
   {
     id: 1,
     name: "Ahmad Javed",
     role: "Philospher & Thinker",
-    image: "/Ahmad-Javed.png",
+    image: ahmed.src,
     quote: "Dr. Umair continues to progress both spiritually and worldly, reaching new heights. He exemplifies a man of high-spirited and resilient demeanor.",
     rating: 5
   },
@@ -16,7 +19,7 @@ const testimonials = [
     id: 2,
     name: "Prof. Dr. Majeedullah Qadri",
     role: "Ex-Dean, University of Karachi",
-    image: "/Dr.-Majeedullah-Qadri.png",
+    image: majeed.src,
     quote: "Dr. Umair made significant contributions as an esteemed member of the Council of Islamic Ideology at a remarkably young age.",
     rating: 5
   },
@@ -24,7 +27,7 @@ const testimonials = [
     id: 3,
     name: "Pro. Dr. Qibla Ayaz",
     role: "Chairman Council of Islamic Ideology",
-    image: "/qibla-Ayaz.png",
+    image: qibla.src,
     quote: "Today, we find ourselves at the City of Knowledge enveloped in an auspicious atmosphere, spearheaded by Dr. Umair Mahmood Siddiqui.",
     rating: 5
   }
