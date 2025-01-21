@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
 import Image from 'next/image'
-import book1 from '../../../public/book1.jpeg'
+import book1 from '../../../Public/book1.jpeg'
 import book2 from '../../../public/book2.jpeg'
 import book3 from '../../../public/book3.jpeg'
 import book4 from '../../../public/book4.jpeg'
