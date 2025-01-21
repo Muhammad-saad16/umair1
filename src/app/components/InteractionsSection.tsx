@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import meet1 from '../../../Public/meet1.jpg'
-import meet2 from '../../../public/meet2.jpg'
-import meet3 from '../../../public/mee3.jpg'
+import meet2 from '../../../Public/meet2.jpg'
+import meet3 from '../../../Public/mee3.jpg'
 
 const interactions = [
   {

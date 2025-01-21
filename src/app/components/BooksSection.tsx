@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import banner from '../../../public/book-banner.jpg'
+import banner from '../../../Public/book-banner.jpg'
 
 export default function BooksSection() {
   return (
