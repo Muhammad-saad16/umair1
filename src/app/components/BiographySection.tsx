@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import banner from '../../../Public/new-banner2.jpg'
+import banner from '../../../Public/new-banner.jpg'
 
 export default function BiographySection() {
     return (
