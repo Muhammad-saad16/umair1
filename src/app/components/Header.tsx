@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import banner from '../../../Public/new-banner1.jpg'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -23,7 +24,7 @@ export default function Header() {
       <div className="relative">
         {/* Banner */}
            <div>
-            <Image src="/new-banner1.jpg" alt="banner" width={1920} height={100}/>
+            <Image src={banner} alt="banner" width={1920} height={100}/>
            </div>
         {/* Navigation */}
         <nav className="bg-[#05445E]/30 backdrop-blur-sm sticky">
