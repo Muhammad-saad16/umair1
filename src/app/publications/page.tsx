@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
 import Image from 'next/image'
 import book1 from '../../../Public/book1.jpeg'
 import book2 from '../../../Public/book2.jpeg'
@@ -159,32 +159,6 @@ export default function BooksPage() {
   }, [searchTerm, selectedCategory])
 
   return (
-    <Layout>
-      {/* Banner Section */}
-      {/* <div className="relative h-[400px] overflow-hidden">
-        <Image
-          src="/book-banner.jpg"
-          alt="Books Banner"
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent">
-          <div className="container mx-auto px-4 h-full flex items-center">
-            <div className="max-w-2xl">
-              <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 transform transition-all duration-700 ${
-                isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-              }`}>
-                Explore Our Collection
-              </h1>
-              <p className={`text-xl text-gray-200 transform transition-all duration-700 delay-200 ${
-                isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-              }`}>
-                Discover a wealth of Islamic knowledge through our comprehensive library of books
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <div className="container mx-auto px-4 py-12">
         {/* Search and Filter Section */}
@@ -262,7 +236,7 @@ export default function BooksPage() {
           </div>
         )}
       </div>
-    </Layout>
+    // </Layout>
   )
 }
 

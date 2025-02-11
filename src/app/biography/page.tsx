@@ -1,9 +1,9 @@
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
 import Image from 'next/image'
 import dr from '../../../Public/dr.jpg'
 export default function AboutPage() {
   return (
-    <Layout>
+    // <Layout>
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-8 text-center text-white">Meet Dr.Umair</h1>
@@ -80,7 +80,7 @@ export default function AboutPage() {
  
         </div>
       </div>
-    </Layout>
+    // </Layout>
   )
 }
 

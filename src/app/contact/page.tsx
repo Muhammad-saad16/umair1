@@ -1,9 +1,9 @@
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
 import { Mail, Phone, MapPin } from 'lucide-react'
 
 export default function ContactPage() {
   return (
-    <Layout>
+    // <Layout>
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
           {/* Contact Info */}
@@ -90,6 +90,6 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-    </Layout>
+    // </Layout>
   )
 }

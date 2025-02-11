@@ -11,19 +11,19 @@ const videos = [
   {
     id: 1,
     thumbnail: event1.src, 
-    youtubeId: "-b12v8nyhdI",
+    youtubeId: "ebOwjR2KFYU",
     category: "Lectures"
   },
   {
     id: 2,
     thumbnail: event2.src,
-    youtubeId: "OGd4VjoPiqU",
+    youtubeId: "bKxvKGjBn0s",
     category: "Sermons"
   },
   {
     id: 3,
     thumbnail: event3.src,
-    youtubeId: "zmjZbZhMH8k",
+    youtubeId: "VwgMpC3cXNE",
     category: "Events"
   },
   
@@ -67,7 +67,7 @@ export default function VideoSection() {
                   alt="Video Thumbnail"
                   className="w-full h-full object-cover transition-transform group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors">
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-16 h-16 rounded-full bg-amber-400 flex items-center justify-center transform group-hover:scale-110 transition-transform">
                       <Play className="w-8 h-8 text-gray-900" />
@@ -85,7 +85,7 @@ export default function VideoSection() {
 
         <div className="text-center mt-12">
           <Link
-            href="/videos"
+            href="/clip-&-videos"
             className="inline-block px-6 py-3 bg-amber-500 text-white font-semibold rounded-full hover:bg-amber-600 transition-colors"
           >
             View All Lectures

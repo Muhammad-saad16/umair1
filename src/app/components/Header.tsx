@@ -4,10 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import banner from '../../../Public/new-banner1.jpg'
-
+import { routes } from "../lib/routes"
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
   return (
     <header className="relative">
       {/* Background with gradient */}
@@ -53,22 +52,17 @@ export default function Header() {
             </div>
 
             {/* Navigation Links */}
-            <ul className={`
-              ${isMenuOpen ? 'block' : 'hidden'} 
+            <ul
+              className={`
+              ${isMenuOpen ? "block" : "hidden"} 
               md:flex md:justify-center md:items-center md:space-x-8 
               py-4 text-center
-            `}>
-              {[
-                'Home',
-                'Biography',
-                'Publications',
-                'Videos',
-                // 'Gallery',
-                'Contact',
-              ].map((item) => (
-                <li key={item}>
+            `}
+            >
+              {routes.map((route) => (
+                <li key={route.path}>
                   <Link
-                    href={`/${item.toLowerCase()}`}
+                    href={route.path}
                     className="
                       text-white hover:text-amber-400 
                       transition-colors duration-200 
@@ -78,7 +72,7 @@ export default function Header() {
                       border-b-2 border-transparent hover:border-amber-400
                     "
                   >
-                    {item}
+                    {route.label}
                   </Link>
                 </li>
               ))}
